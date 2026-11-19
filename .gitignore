@@ -1,0 +1,98 @@
+# =============================================================
+# TruthLens Global Git Ignore Configuration
+# =============================================================
+
+# Environments & Secrets
+.env
+.env.*
+!.env.example
+*.env
+*.pem
+*.key
+*.token
+*.secret
+
+# Python Virtual Environments & Caches
+venv/
+.venv/
+env/
+**/venv/
+**/env/
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+
+# Node.js & Frontend
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+dist-ssr/
+**/dist-ssr/
+.npm/
+*.local
+
+# Model Weights, Checkpoints & Caches
+models/
+models_cache/
+**/models_cache/
+*.pt
+*.pth
+*.bin
+*.onnx
+*.safetensors
+*.ckpt
+.cache/
+**/.cache/
+
+# User Uploaded Media & Temporary Test Files
+uploads/
+**/uploads/
+data/uploads/
+data/processed/
+*.mp4
+*.wav
+*.avi
+*.mov
+*.mp3
+*.webm
+*.flac
+*.ogg
+test_sample.*
+**/test_sample.*
+
+# Local Temporary Backups
+*_backup*/
+**/*_backup*/
+
+# Logs & Runtime
+*.log
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# IDE & OS Files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db

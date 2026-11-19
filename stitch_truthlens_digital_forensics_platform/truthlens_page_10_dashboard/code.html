@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "on-secondary-fixed-variant": "#3621cc",
+        "error-container": "#93000a",
+        "on-secondary-container": "#b0adff",
+        "on-tertiary-fixed-variant": "#781f74",
+        "surface-container-low": "#1b1b1f",
+        "tertiary-fixed": "#ffd7f4",
+        "surface-container": "#1f1f23",
+        "primary-fixed-dim": "#dcb8ff",
+        "primary-fixed": "#efdbff",
+        "on-primary": "#480082",
+        "on-error-container": "#ffdad6",
+        "surface-container-high": "#292a2d",
+        "surface": "#121316",
+        "inverse-primary": "#7b3eba",
+        "on-tertiary-fixed": "#380037",
+        "on-primary-fixed-variant": "#6221a0",
+        "surface-container-highest": "#343538",
+        "surface-tint": "#dcb8ff",
+        "primary-container": "#783bb7",
+        "on-tertiary-container": "#ffc0f2",
+        "on-surface-variant": "#cec2d4",
+        "secondary-container": "#3621cc",
+        "outline-variant": "#4c4452",
+        "on-error": "#690005",
+        "on-tertiary": "#5c005a",
+        "background": "#121316",
+        "secondary-fixed": "#e3dfff",
+        "on-surface": "#e3e2e6",
+        "surface-variant": "#343538",
+        "on-primary-container": "#e5c9ff",
+        "inverse-surface": "#e3e2e6",
+        "on-background": "#e3e2e6",
+        "on-primary-fixed": "#2b0052",
+        "primary": "#dcb8ff",
+        "inverse-on-surface": "#2f3034",
+        "surface-container-lowest": "#0d0e11",
+        "secondary-fixed-dim": "#c4c0ff",
+        "tertiary": "#ffabf1",
+        "on-secondary-fixed": "#100069",
+        "outline": "#978d9d",
+        "surface-dim": "#121316",
+        "surface-bright": "#38393c",
+        "tertiary-fixed-dim": "#ffabf1",
+        "error": "#ffb4ab",
+        "on-secondary": "#2000a4",
+        "tertiary-container": "#91368a",
+        "secondary": "#c4c0ff"
+      },
+      "borderRadius": {
+        "DEFAULT": "1rem",
+        "lg": "2rem",
+        "xl": "3rem",
+        "full": "9999px"
+      },
+      "spacing": {
+        "margin": "2.5rem",
+        "space-lg": "1.5rem",
+        "gutter-mobile": "1rem",
+        "gutter": "1.5rem",
+        "space-xl": "2.5rem",
+        "space-sm": "0.5rem",
+        "margin-mobile": "1rem",
+        "space-xs": "0.25rem",
+        "space-md": "1rem"
+      },
+      "fontFamily": {
+        "display-lg": [
+          "Manrope"
+        ],
+        "body-lg": [
+          "Inter"
+        ],
+        "headline-lg": [
+          "Manrope"
+        ],
+        "headline-md": [
+          "Manrope"
+        ],
+        "body-sm": [
+          "Inter"
+        ],
+        "body-md": [
+          "Inter"
+        ],
+        "headline-sm": [
+          "Manrope"
+        ],
+        "display-lg-mobile": [
+          "Manrope"
+        ],
+        "headline-xl": [
+          "Manrope"
+        ],
+        "label-md": [
+          "Inter"
+        ],
+        "label-sm": [
+          "Inter"
+        ],
+        "headline-xl-mobile": [
+          "Manrope"
+        ]
+      },
+      "fontSize": {
+        "display-lg": [
+          "3.5rem",
+          {
+            "lineHeight": "4.25rem",
+            "letterSpacing": "-0.025em",
+            "fontWeight": "700"
+          }
+        ],
+        "body-lg": [
+          "1.125rem",
+          {
+            "lineHeight": "1.75rem",
+            "letterSpacing": "0em",
+            "fontWeight": "400"
+          }
+        ],
+        "headline-lg": [
+          "2rem",
+          {
+            "lineHeight": "2.5rem",
+            "letterSpacing": "-0.015em",
+            "fontWeight": "600"
+          }
+        ],
+        "headline-md": [
+          "1.5rem",
+          {
+            "lineHeight": "2rem",
+            "letterSpacing": "-0.01em",
+            "fontWeight": "600"
+          }
+        ],
+        "body-sm": [
+          "0.875rem",
+          {
+            "lineHeight": "1.25rem",
+            "letterSpacing": "0.005em",
+            "fontWeight": "400"
+          }
+        ],
+        "body-md": [
+          "1rem",
+          {
+            "lineHeight": "1.5rem",
+            "letterSpacing": "0em",
+            "fontWeight": "400"
+          }
+        ],
+        "headline-sm": [
+          "1.25rem",
+          {
+            "lineHeight": "1.75rem",
+            "letterSpacing": "-0.005em",
+            "fontWeight": "600"
+          }
+        ],
+        "display-lg-mobile": [
+          "2.25rem",
+          {
+            "lineHeight": "2.75rem",
+            "letterSpacing": "-0.02em",
+            "fontWeight": "700"
+          }
+        ],
+        "headline-xl": [
+          "2.5rem",
+          {
+            "lineHeight": "3rem",
+            "letterSpacing": "-0.02em",
+            "fontWeight": "600"
+          }
+        ],
+        "label-md": [
+          "0.875rem",
+          {
+            "lineHeight": "1.25rem",
+            "letterSpacing": "0.01em",
+            "fontWeight": "500"
+          }
+        ],
+        "label-sm": [
+          "0.75rem",
+          {
+            "lineHeight": "1rem",
+            "letterSpacing": "0.05em",
+            "fontWeight": "600"
+          }
+        ],
+        "headline-xl-mobile": [
+          "1.75rem",
+          {
+            "lineHeight": "2.25rem",
+            "letterSpacing": "-0.015em",
+            "fontWeight": "600"
+          }
+        ]
+      }
+    },
+  },
+}</script></head><body class="bg-surface-container-lowest font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-[248px] bg-surface-container-low/95 backdrop-blur-xl z-50 flex flex-col justify-between py-space-md shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="flex flex-col"><div class="px-space-md mb-space-lg"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center text-on-primary shadow-[0_0_12px_rgba(120,59,183,0.45)]"><span class="material-symbols-outlined text-[20px]">security</span></div><div><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight block">TruthLens</span><span class="font-label-sm text-label-sm text-on-surface-variant block tracking-wider uppercase opacity-75">Forensic AI</span></div></div><p class="font-label-sm text-label-sm text-on-surface-variant mt-space-xs tracking-normal opacity-60">Verify More. Trust Smarter.</p></div><div class="flex flex-col gap-space-md overflow-y-auto max-h-[calc(100vh-280px)] px-space-xs"><div class="px-space-xs"><span class="px-space-xs font-label-sm text-label-sm text-on-surface-variant/70 tracking-wider uppercase mb-space-xs block">Workspace</span><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold shadow-[0_0_16px_rgba(120,59,183,0.35)]"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="home" href="#"><span class="material-symbols-outlined text-[18px]">home</span><span class="font-body-sm text-body-sm">Home</span></a></nav></div><div class="px-space-xs"><span class="px-space-xs font-label-sm text-label-sm text-on-surface-variant/70 tracking-wider uppercase mb-space-xs block">AI Tools</span><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold shadow-[0_0_16px_rgba(120,59,183,0.35)]"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="omniscan" href="#"><span class="material-symbols-outlined text-[18px]">csv</span><span class="font-body-sm text-body-sm">OmniScan</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="linklens" href="#"><span class="material-symbols-outlined text-[18px]">link</span><span class="font-body-sm text-body-sm">LinkLens</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="websentinel" href="#"><span class="material-symbols-outlined text-[18px]">shield_with_heart</span><span class="font-body-sm text-body-sm">WebSentinel</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="qrguard" href="#"><span class="material-symbols-outlined text-[18px]">qr_code_scanner</span><span class="font-body-sm text-body-sm">QRGuard</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="reorigin" href="#"><span class="material-symbols-outlined text-[18px]">history_edu</span><span class="font-body-sm text-body-sm">ReOrigin</span></a></nav></div><div class="px-space-xs"><span class="px-space-xs font-label-sm text-label-sm text-on-surface-variant/70 tracking-wider uppercase mb-space-xs block">Management</span><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold shadow-[0_0_16px_rgba(120,59,183,0.35)]"><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-full transition-all bg-primary-container text-on-primary-container font-semibold shadow-[0_0_16px_rgba(120,59,183,0.35)]" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[18px]">space_dashboard</span><span class="font-body-sm text-body-sm">Dashboard</span></a></nav></div></div></div><div class="px-space-md flex flex-col gap-space-sm"><div class="bg-surface-container p-space-sm rounded-lg flex flex-col gap-space-xs shadow-[0_2px_8px_rgba(0,0,0,0.3)]"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant">LensCredits</span><div class="flex items-center gap-1 bg-surface-container-highest px-space-xs py-0.5 rounded-full"><span class="material-symbols-outlined text-primary text-[14px]">toll</span><span class="font-label-sm text-label-sm font-semibold text-primary">100 LC</span></div></div><a class="w-full text-center bg-surface-container-high hover:bg-surface-variant hover:text-on-surface text-on-surface-variant text-label-sm font-label-sm py-space-xs rounded-full transition-colors flex items-center justify-center gap-1" data-path="billing" href="#"><span class="material-symbols-outlined text-[14px]">add</span>Get Credits</a></div><div class="flex items-center justify-between p-space-xs rounded-full hover:bg-surface-container cursor-pointer transition-colors"><div class="flex items-center gap-space-xs"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface leading-tight">Forensic Unit</span><span class="font-label-sm text-label-sm text-on-surface-variant/70 leading-tight">My Account</span></div></div><span class="material-symbols-outlined text-on-surface-variant text-[18px]">expand_more</span></div></div></aside><div class="pl-[248px]"><header class="fixed top-0 left-[248px] right-0 h-16 bg-surface/80 backdrop-blur-xl z-40 flex items-center justify-between px-space-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-space-xs rounded-full shadow-[0_1px_4px_rgba(0,0,0,0.2)]"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface-variant">Autonomous Threat Intelligence: <strong class="text-on-surface font-semibold">Active</strong></span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-space-xs rounded-full"><span class="material-symbols-outlined text-primary text-[16px]">token</span><span class="font-label-sm text-label-sm text-primary font-semibold">100 LC Balance</span></div><button class="flex items-center justify-center w-8 h-8 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[18px]">notifications</span></button><button class="flex items-center justify-center w-8 h-8 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[18px]">settings</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="px-space-md lg:px-space-xl py-space-lg flex flex-col gap-space-xl max-w-[1440px] mx-auto w-full">
+<!-- 1. PAGE HEADER -->
+<section class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary shadow-sm mt-0.5">
+<span class="material-symbols-outlined text-[22px]">space_dashboard</span>
+</div>
+<div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Dashboard</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-2xl mt-0.5">
+            Manage your LensCredits, review analysis history, access reports, and control your TruthLens account.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container px-space-md py-space-xs rounded-full self-start md:self-auto shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold tracking-wide">100 LC Available</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">· LensCredits Active</span>
+</div>
+</section>
+<!-- 2. DASHBOARD OVERVIEW (4 Summary Cards) -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Card 1 -->
+<div class="bg-surface-container-low rounded-lg p-space-lg flex flex-col justify-between shadow-md hover:shadow-lg transition-shadow">
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Available LensCredits</span>
+<div class="w-9 h-9 rounded-full bg-primary-container/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">account_balance_wallet</span>
+</div>
+</div>
+<div>
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold tracking-tight">100 <span class="font-headline-sm text-headline-sm text-primary font-normal">LC</span></span>
+<p class="font-label-sm text-label-sm text-on-surface-variant/80 mt-1">Live verifiable balance ready for deployment</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-low rounded-lg p-space-lg flex flex-col justify-between shadow-md hover:shadow-lg transition-shadow">
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Free LensCredits</span>
+<div class="w-9 h-9 rounded-full bg-surface-container-highest flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">featured_seasonal_and_gifts</span>
+</div>
+</div>
+<div>
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold tracking-tight">100 <span class="font-headline-sm text-headline-sm text-secondary font-normal">LC</span></span>
+<p class="font-label-sm text-label-sm text-on-surface-variant/80 mt-1">One-time welcome allocation claim</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-low rounded-lg p-space-lg flex flex-col justify-between shadow-md hover:shadow-lg transition-shadow">
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Purchased LensCredits</span>
+<div class="w-9 h-9 rounded-full bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">toll</span>
+</div>
+</div>
+<div>
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold tracking-tight">0 <span class="font-headline-sm text-headline-sm text-on-surface-variant font-normal">LC</span></span>
+<p class="font-label-sm text-label-sm text-on-surface-variant/80 mt-1">Simulated or commercial credit add-ons</p>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-low rounded-lg p-space-lg flex flex-col justify-between shadow-md hover:shadow-lg transition-shadow">
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Completed Analyses</span>
+<div class="w-9 h-9 rounded-full bg-surface-container-highest flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[20px]">troubleshoot</span>
+</div>
+</div>
+<div>
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold tracking-tight">0</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant/80 mt-1">Total completed forensic runs &amp; reconstructions</p>
+</div>
+</div>
+</section>
+<!-- 3. ANALYSIS HISTORY -->
+<section class="bg-surface-container-low rounded-lg p-space-lg shadow-md flex flex-col gap-space-md">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Analysis History</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Review your previous analyses and access their associated forensic reports.</p>
+</div>
+</div>
+<!-- Search and Filter Bar -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-sm pt-space-xs">
+<div class="relative w-full lg:w-80">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span>
+<input class="w-full bg-surface-container pl-9 pr-4 py-2 rounded-full font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:ring-1 focus:ring-primary shadow-inner" placeholder="Search your analyses..." type="text"/>
+</div>
+<!-- Filter Pills -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant mr-1">Tools:</span>
+<button class="bg-primary text-on-primary font-label-sm text-label-sm px-3 py-1 rounded-full font-medium shadow-sm transition-all">All Tools</button>
+<button class="bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm px-3 py-1 rounded-full transition-all">OmniScan</button>
+<button class="bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm px-3 py-1 rounded-full transition-all">LinkLens</button>
+<button class="bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm px-3 py-1 rounded-full transition-all">WebSentinel</button>
+<button class="bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm px-3 py-1 rounded-full transition-all">QRGuard</button>
+<button class="bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm px-3 py-1 rounded-full transition-all">ReOrigin</button>
+<div class="w-px h-4 bg-surface-container-highest mx-1"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mr-1">Status:</span>
+<button class="bg-primary-container text-on-primary-container font-label-sm text-label-sm px-3 py-1 rounded-full">All Statuses</button>
+<button class="bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm px-3 py-1 rounded-full">Completed</button>
+</div>
+</div>
+<!-- History Table -->
+<div class="overflow-x-auto w-full mt-space-xs rounded-lg bg-surface-container-lowest/50">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<tr>
+<th class="py-3 px-4">Analysis</th>
+<th class="py-3 px-4">Tool</th>
+<th class="py-3 px-4">Date &amp; Time</th>
+<th class="py-3 px-4">Status</th>
+<th class="py-3 px-4">Risk Assessment</th>
+<th class="py-3 px-4">Credits</th>
+<th class="py-3 px-4 text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container text-on-surface">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-3.5 px-4 font-medium">Portrait Multi-Spectrum #8942</td>
+<td class="py-3.5 px-4">
+<span class="bg-surface-container px-2 py-0.5 rounded-full font-label-sm text-label-sm text-primary flex items-center gap-1 w-max">
+<span class="material-symbols-outlined text-[13px]">image</span> OmniScan (Image)
+                </span>
+</td>
+<td class="py-3.5 px-4 font-label-sm text-label-sm text-on-surface-variant">May 19, 2024 · 14:22</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface">Completed</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="bg-error-container/20 text-error px-2 py-0.5 rounded-full font-label-sm text-label-sm font-medium">High Risk (Deepfake)</span>
+</td>
+<td class="py-3.5 px-4 font-semibold text-on-surface-variant">-5 LC</td>
+<td class="py-3.5 px-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="hover:bg-surface-container text-primary font-label-sm text-label-sm px-2.5 py-1 rounded-full transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">visibility</span> View
+                  </button>
+<button class="hover:bg-surface-container text-on-surface font-label-sm text-label-sm px-2 py-1 rounded-full transition-colors">
+<span class="material-symbols-outlined text-[14px]">download</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-3.5 px-4 font-medium">Host Phishing Trace #0992</td>
+<td class="py-3.5 px-4">
+<span class="bg-surface-container px-2 py-0.5 rounded-full font-label-sm text-label-sm text-secondary flex items-center gap-1 w-max">
+<span class="material-symbols-outlined text-[13px]">shield</span> WebSentinel
+                </span>
+</td>
+<td class="py-3.5 px-4 font-label-sm text-label-sm text-on-surface-variant">May 18, 2024 · 18:05</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface">Completed</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="bg-surface-container-highest text-tertiary px-2 py-0.5 rounded-full font-label-sm text-label-sm font-medium">Moderate Risk</span>
+</td>
+<td class="py-3.5 px-4 font-semibold text-on-surface-variant">-20 LC</td>
+<td class="py-3.5 px-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="hover:bg-surface-container text-primary font-label-sm text-label-sm px-2.5 py-1 rounded-full transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">visibility</span> View
+                  </button>
+<button class="hover:bg-surface-container text-on-surface font-label-sm text-label-sm px-2 py-1 rounded-full transition-colors">
+<span class="material-symbols-outlined text-[14px]">download</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-3.5 px-4 font-medium">Payload Extraction #5921</td>
+<td class="py-3.5 px-4">
+<span class="bg-surface-container px-2 py-0.5 rounded-full font-label-sm text-label-sm text-primary flex items-center gap-1 w-max">
+<span class="material-symbols-outlined text-[13px]">qr_code</span> QRGuard
+                </span>
+</td>
+<td class="py-3.5 px-4 font-label-sm text-label-sm text-on-surface-variant">May 17, 2024 · 11:40</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface">Completed</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="bg-surface-container-highest text-on-surface px-2 py-0.5 rounded-full font-label-sm text-label-sm">Safe / Verified</span>
+</td>
+<td class="py-3.5 px-4 font-semibold text-on-surface-variant">-10 LC</td>
+<td class="py-3.5 px-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="hover:bg-surface-container text-primary font-label-sm text-label-sm px-2.5 py-1 rounded-full transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">visibility</span> View
+                  </button>
+<button class="hover:bg-surface-container text-on-surface font-label-sm text-label-sm px-2 py-1 rounded-full transition-colors">
+<span class="material-symbols-outlined text-[14px]">download</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4 (ReOrigin) -->
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-3.5 px-4 font-medium">Historical Artifact Restoration #1104</td>
+<td class="py-3.5 px-4">
+<span class="bg-surface-container px-2 py-0.5 rounded-full font-label-sm text-label-sm text-tertiary flex items-center gap-1 w-max">
+<span class="material-symbols-outlined text-[13px]">history_edu</span> ReOrigin
+                </span>
+</td>
+<td class="py-3.5 px-4 font-label-sm text-label-sm text-on-surface-variant">May 15, 2024 · 09:12</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface">Completed</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="bg-primary-container/20 text-primary-fixed px-2 py-0.5 rounded-full font-label-sm text-label-sm font-medium">Reconstructed</span>
+</td>
+<td class="py-3.5 px-4 font-semibold text-on-surface-variant">-25 LC</td>
+<td class="py-3.5 px-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="bg-primary/10 hover:bg-primary/20 text-primary font-label-sm text-label-sm px-2.5 py-1 rounded-full transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">download</span> Image <span class="bg-primary text-on-primary text-[10px] px-1 rounded-full">Free</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination Footer -->
+<div class="flex items-center justify-between pt-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span>Showing 4 of 4 analyses</span>
+<div class="flex items-center gap-1">
+<button class="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant opacity-50 cursor-not-allowed">Previous</button>
+<button class="px-3 py-1 rounded-full bg-primary text-on-primary font-semibold">1</button>
+<button class="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant opacity-50 cursor-not-allowed">Next</button>
+</div>
+</div>
+</section>
+<!-- 4. MY REPORTS -->
+<section class="flex flex-col gap-space-md">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">My Reports</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Access and download reports generated by your TruthLens forensic runs.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Report 1 -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col justify-between shadow-md hover:shadow-lg transition-all">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-start justify-between">
+<span class="bg-surface-container text-primary font-label-sm text-label-sm px-2.5 py-0.5 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">image</span> OmniScan
+              </span>
+<span class="bg-surface-container-highest text-on-surface font-label-sm text-label-sm px-2 py-0.5 rounded-full font-mono">PDF</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-2 truncate font-semibold">Report_OmniScan_IMG-8942.pdf</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Generated May 19, 2024 · 14:24</p>
+</div>
+<div class="flex items-center justify-between mt-space-md pt-space-sm border-t border-surface-container">
+<span class="font-label-sm text-label-sm text-secondary font-medium">Free Access</span>
+<div class="flex items-center gap-1">
+<button class="px-3 py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">visibility</span> View
+              </button>
+<button class="px-3 py-1 rounded-full bg-surface-container-highest hover:bg-surface-variant text-on-surface font-label-sm text-label-sm transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">download</span> Download
+              </button>
+</div>
+</div>
+</div>
+<!-- Report 2 -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col justify-between shadow-md hover:shadow-lg transition-all">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-start justify-between">
+<span class="bg-surface-container text-secondary font-label-sm text-label-sm px-2.5 py-0.5 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">shield</span> WebSentinel
+              </span>
+<span class="bg-surface-container-highest text-on-surface font-label-sm text-label-sm px-2 py-0.5 rounded-full font-mono">PDF</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-2 truncate font-semibold">Report_WebSentinel_SEC-0992.pdf</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Generated May 18, 2024 · 18:07</p>
+</div>
+<div class="flex items-center justify-between mt-space-md pt-space-sm border-t border-surface-container">
+<span class="font-label-sm text-label-sm text-secondary font-medium">Free Access</span>
+<div class="flex items-center gap-1">
+<button class="px-3 py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">visibility</span> View
+              </button>
+<button class="px-3 py-1 rounded-full bg-surface-container-highest hover:bg-surface-variant text-on-surface font-label-sm text-label-sm transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">download</span> Download
+              </button>
+</div>
+</div>
+</div>
+<!-- Report 3 -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col justify-between shadow-md hover:shadow-lg transition-all">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-start justify-between">
+<span class="bg-surface-container text-primary font-label-sm text-label-sm px-2.5 py-0.5 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">qr_code</span> QRGuard
+              </span>
+<span class="bg-surface-container-highest text-on-surface font-label-sm text-label-sm px-2 py-0.5 rounded-full font-mono">JSON</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-2 truncate font-semibold">Report_QRGuard_QRG-5921.json</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Generated May 17, 2024 · 11:42</p>
+</div>
+<div class="flex items-center justify-between mt-space-md pt-space-sm border-t border-surface-container">
+<span class="font-label-sm text-label-sm text-secondary font-medium">Free Access</span>
+<div class="flex items-center gap-1">
+<button class="px-3 py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">visibility</span> View
+              </button>
+<button class="px-3 py-1 rounded-full bg-surface-container-highest hover:bg-surface-variant text-on-surface font-label-sm text-label-sm transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">download</span> Download
+              </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. LENSCREDITS WALLET -->
+<section class="bg-surface-container-low rounded-lg p-space-lg shadow-md flex flex-col gap-space-md">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">LensCredits Wallet</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Manage your available credits and purchase additional credits when needed.</p>
+</div>
+<!-- Telemetry Panel -->
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-space-sm bg-surface-container rounded-lg p-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Available Balance</span>
+<span class="font-headline-md text-headline-md text-primary font-bold mt-1">100 LC</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Active</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Remaining Free</span>
+<span class="font-headline-md text-headline-md text-on-surface font-semibold mt-1">100 LC</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant/70">Welcome pool</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Purchased Credits</span>
+<span class="font-headline-md text-headline-md text-on-surface font-semibold mt-1">0 LC</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant/70">Top-up balance</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Reserved Credits</span>
+<span class="font-headline-md text-headline-md text-on-surface font-semibold mt-1">0 LC</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant/70">In-flight hold</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Total Consumed</span>
+<span class="font-headline-md text-headline-md text-on-surface font-semibold mt-1">0 LC</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant/70">Lifetime usage</span>
+</div>
+</div>
+<!-- Explanatory Callout -->
+<div class="bg-surface-container/60 rounded-lg p-space-md flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">info</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          LensCredits are used when submitting analyses and image reconstruction requests. Opening tools does not consume credits. Credits are reserved when submitting a request, settled upon successful completion, and released if the request fails.
+        </p>
+</div>
+</section>
+<!-- 6. GET MORE LENSCREDITS (4 Pricing Packages) -->
+<section class="flex flex-col gap-space-md">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Get More LensCredits</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Choose a credit package that fits your verification needs. No subscriptions or recurring payments.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Package 1: Starter -->
+<div class="bg-surface-container-low rounded-lg p-space-lg flex flex-col justify-between shadow-md opacity-80">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Starter</span>
+<div class="mt-space-sm mb-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold">₹0</span>
+</div>
+<span class="font-label-md text-label-md text-primary font-semibold block mb-space-sm">100 LensCredits</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">One-time welcome credits awarded on your first successful login.</p>
+</div>
+<button class="w-full mt-space-lg py-2.5 rounded-full bg-surface-container text-on-surface-variant/60 font-label-md text-label-md font-medium cursor-not-allowed" disabled="">
+            Already Claimed
+          </button>
+</div>
+<!-- Package 2: Explorer -->
+<div class="bg-surface-container-low rounded-lg p-space-lg flex flex-col justify-between shadow-md hover:shadow-lg transition-shadow">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Explorer</span>
+<div class="mt-space-sm mb-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold">₹49</span>
+</div>
+<span class="font-label-md text-label-md text-primary font-semibold block mb-space-sm">150 LensCredits</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">For occasional digital verification and basic forensics.</p>
+</div>
+<button class="w-full mt-space-lg py-2.5 rounded-full bg-on-surface text-surface font-label-md text-label-md font-semibold hover:bg-surface-variant hover:text-on-surface transition-colors shadow-sm">
+            Get Explorer
+          </button>
+</div>
+<!-- Package 3: Protector (Popular/Highlighted) -->
+<div class="bg-surface-container-low rounded-lg p-space-lg flex flex-col justify-between shadow-xl relative overflow-hidden ring-1 ring-primary/40">
+<div class="absolute -right-12 top-6 bg-primary text-on-primary text-[11px] font-bold px-12 py-0.5 rotate-45 shadow-sm uppercase tracking-wider">
+            Popular
+          </div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">Protector</span>
+<div class="mt-space-sm mb-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold">₹99</span>
+</div>
+<span class="font-label-md text-label-md text-primary font-semibold block mb-space-sm">350 LensCredits</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">For regular digital verification across audio, video and web domains.</p>
+</div>
+<button class="w-full mt-space-lg py-2.5 rounded-full bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container hover:text-on-primary-container transition-colors shadow-md">
+            Get Protector
+          </button>
+</div>
+<!-- Package 4: Guardian -->
+<div class="bg-surface-container-low rounded-lg p-space-lg flex flex-col justify-between shadow-md hover:shadow-lg transition-shadow">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Guardian</span>
+<div class="mt-space-sm mb-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold">₹199</span>
+</div>
+<span class="font-label-md text-label-md text-primary font-semibold block mb-space-sm">800 LensCredits</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">For frequent use across all TruthLens multi-spectrum forensic tools.</p>
+</div>
+<button class="w-full mt-space-lg py-2.5 rounded-full bg-on-surface text-surface font-label-md text-label-md font-semibold hover:bg-surface-variant hover:text-on-surface transition-colors shadow-sm">
+            Get Guardian
+          </button>
+</div>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant/70 text-center">Strictly pay-as-you-go credits. No recurring payments or subscriptions.</p>
+</section>
+<!-- 7. SIMULATED DEMO PAYMENT MODAL / WORKFLOW (Embedded Preview Card) -->
+<section class="bg-surface-container-low rounded-lg p-space-lg shadow-lg flex flex-col gap-space-md border border-primary/20">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">shopping_cart_checkout</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Simulated Checkout — Demo Mode</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Prototype Purchase Execution Flow</span>
+</div>
+</div>
+<span class="bg-primary/20 text-primary-fixed px-3 py-1 rounded-full font-label-sm text-label-sm font-semibold tracking-wide">
+          Safe Sandbox
+        </span>
+</div>
+<div class="bg-surface-container rounded-lg p-space-md flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Selected Package</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Protector Package · 350 LensCredits</h4>
+<span class="font-label-md text-label-md text-primary font-bold">Total Payable: ₹99</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-5 py-2.5 rounded-full bg-surface-container-highest hover:bg-surface-variant text-on-surface font-label-md text-label-md font-medium transition-colors">
+            Cancel
+          </button>
+<button class="px-6 py-2.5 rounded-full bg-primary hover:bg-primary-container text-on-primary hover:text-on-primary-container font-label-md text-label-md font-semibold transition-colors shadow-md">
+            Confirm Demo Purchase
+          </button>
+</div>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm bg-surface-container/40 p-2.5 rounded-full">
+<span class="material-symbols-outlined text-secondary text-[16px]">info</span>
+<span>Demo payment — No real money will be charged. This is a prototype simulation for forensic verification testing.</span>
+</div>
+</section>
+<!-- 8. CREDIT TRANSACTION HISTORY -->
+<section class="bg-surface-container-low rounded-lg p-space-lg shadow-md flex flex-col gap-space-md">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Credit Transactions</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Track your LensCredits purchases, usage, and system adjustments.</p>
+</div>
+<div class="overflow-x-auto w-full rounded-lg bg-surface-container-lowest/50">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<tr>
+<th class="py-3 px-4">Transaction ID / Type</th>
+<th class="py-3 px-4">Date &amp; Time</th>
+<th class="py-3 px-4">Description</th>
+<th class="py-3 px-4">Credits</th>
+<th class="py-3 px-4">Status</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container text-on-surface">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container/40 transition-colors">
+<td class="py-3.5 px-4 font-medium flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">card_giftcard</span>
+                TXN-WEL-001 (Welcome Allocation)
+              </td>
+<td class="py-3.5 px-4 font-label-sm text-label-sm text-on-surface-variant">Today · 10:00</td>
+<td class="py-3.5 px-4 text-on-surface-variant">Welcome bonus allocation (first login)</td>
+<td class="py-3.5 px-4 font-bold text-secondary">+100 LC</td>
+<td class="py-3.5 px-4"><span class="bg-surface-container text-on-surface px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-medium">Settled</span></td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container/40 transition-colors">
+<td class="py-3.5 px-4 font-medium flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">shopping_bag</span>
+                TXN-BUY-1082 (Simulated Credit Purchase)
+              </td>
+<td class="py-3.5 px-4 font-label-sm text-label-sm text-on-surface-variant">Yesterday · 16:45</td>
+<td class="py-3.5 px-4 text-on-surface-variant">Explorer Package purchase (Demo Sandbox)</td>
+<td class="py-3.5 px-4 font-bold text-secondary">+150 LC</td>
+<td class="py-3.5 px-4"><span class="bg-surface-container text-on-surface px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-medium">Completed</span></td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container/40 transition-colors">
+<td class="py-3.5 px-4 font-medium flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">image</span>
+                TXN-USE-8942 (OmniScan Analysis)
+              </td>
+<td class="py-3.5 px-4 font-label-sm text-label-sm text-on-surface-variant">May 19, 2024 · 14:22</td>
+<td class="py-3.5 px-4 text-on-surface-variant">Portrait multi-spectral deepfake inspection</td>
+<td class="py-3.5 px-4 font-bold text-on-surface-variant">-5 LC</td>
+<td class="py-3.5 px-4"><span class="bg-surface-container text-on-surface-variant px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-medium">Deducted</span></td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container/40 transition-colors">
+<td class="py-3.5 px-4 font-medium flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">link</span>
+                TXN-USE-4820 (LinkLens Social Analysis)
+              </td>
+<td class="py-3.5 px-4 font-label-sm text-label-sm text-on-surface-variant">May 18, 2024 · 21:10</td>
+<td class="py-3.5 px-4 text-on-surface-variant">YouTube video telemetry &amp; provenance audit</td>
+<td class="py-3.5 px-4 font-bold text-on-surface-variant">-15 LC</td>
+<td class="py-3.5 px-4"><span class="bg-surface-container text-on-surface-variant px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-medium">Deducted</span></td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container/40 transition-colors">
+<td class="py-3.5 px-4 font-medium flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">shield</span>
+                TXN-USE-0992 (WebSentinel Security Scan)
+              </td>
+<td class="py-3.5 px-4 font-label-sm text-label-sm text-on-surface-variant">May 18, 2024 · 18:05</td>
+<td class="py-3.5 px-4 text-on-surface-variant">Phishing domain heuristic &amp; certificate audit</td>
+<td class="py-3.5 px-4 font-bold text-on-surface-variant">-20 LC</td>
+<td class="py-3.5 px-4"><span class="bg-surface-container text-on-surface-variant px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-medium">Deducted</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- 9. LENSCREDITS USAGE REFERENCE (Compact 2-Column Grid) -->
+<section class="bg-surface-container-low rounded-lg p-space-lg shadow-md flex flex-col gap-space-md">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">LensCredits Usage</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Standardized consumption rates per forensic tool and operation.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Col 1: Forensic Analyses -->
+<div class="bg-surface-container rounded-lg p-space-md flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold mb-1">Forensic Analysis Tools</span>
+<div class="flex items-center justify-between py-2 border-b border-surface-container-highest">
+<span class="font-body-sm text-body-sm text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary">image</span> OmniScan (Image)
+            </span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">5 LC</span>
+</div>
+<div class="flex items-center justify-between py-2 border-b border-surface-container-highest">
+<span class="font-body-sm text-body-sm text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary">mic</span> OmniScan (Audio)
+            </span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">10 LC</span>
+</div>
+<div class="flex items-center justify-between py-2 border-b border-surface-container-highest">
+<span class="font-body-sm text-body-sm text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary">videocam</span> OmniScan (Video)
+            </span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">20 LC</span>
+</div>
+<div class="flex items-center justify-between py-2 border-b border-surface-container-highest">
+<span class="font-body-sm text-body-sm text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">link</span> LinkLens
+            </span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">15 LC</span>
+</div>
+<div class="flex items-center justify-between py-2">
+<span class="font-body-sm text-body-sm text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">shield</span> WebSentinel
+            </span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">20 LC</span>
+</div>
+</div>
+<!-- Col 2: Diagnostics & Reports -->
+<div class="bg-surface-container rounded-lg p-space-md flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold mb-1">Extended Tools &amp; Free Deliverables</span>
+<div class="flex items-center justify-between py-2 border-b border-surface-container-highest">
+<span class="font-body-sm text-body-sm text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary">qr_code</span> QRGuard
+            </span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">10 LC</span>
+</div>
+<div class="flex items-center justify-between py-2 border-b border-surface-container-highest">
+<span class="font-body-sm text-body-sm text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-tertiary">history_edu</span> ReOrigin (Image Reconstruction)
+            </span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">25 LC</span>
+</div>
+<div class="flex items-center justify-between py-2 border-b border-surface-container-highest">
+<span class="font-body-sm text-body-sm text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">visibility</span> View Reports
+            </span>
+<span class="font-label-sm text-label-sm font-bold text-secondary">Free (0 LC)</span>
+</div>
+<div class="flex items-center justify-between py-2 border-b border-surface-container-highest">
+<span class="font-body-sm text-body-sm text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">download</span> Download Reports
+            </span>
+<span class="font-label-sm text-label-sm font-bold text-secondary">Free (0 LC)</span>
+</div>
+<div class="flex items-center justify-between py-2">
+<span class="font-body-sm text-body-sm text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">image</span> Download Reconstructed Images
+            </span>
+<span class="font-label-sm text-label-sm font-bold text-secondary">Free (0 LC)</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 10. ACCOUNT AND PROFILE SETTINGS (My Account) -->
+<section class="bg-surface-container-low rounded-lg p-space-lg shadow-md flex flex-col gap-space-md mb-space-lg">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">My Account</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Manage your TruthLens profile and sovereign account preferences.</p>
+</div>
+<!-- Profile Card Container -->
+<div class="bg-surface-container rounded-lg p-space-md flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-on-primary font-headline-md text-headline-md font-bold shadow-md">
+            TL
+          </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">TruthLens Analyst</h3>
+<span class="bg-primary/20 text-primary-fixed px-2 py-0.5 rounded-full font-label-sm text-label-sm font-medium">Community Tier</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">analyst@truthlens.ai</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant/70 mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">calendar_today</span> Joined May 2024
+            </span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs self-start md:self-auto">
+<button class="px-4 py-2 rounded-full bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-sm text-label-sm font-semibold transition-colors flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">edit</span> Edit Profile
+          </button>
+<button class="px-4 py-2 rounded-full bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-sm text-label-sm font-semibold transition-colors flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">lock_reset</span> Change Password
+          </button>
+<button class="px-4 py-2 rounded-full bg-error-container/20 hover:bg-error-container/40 text-error font-label-sm text-label-sm font-semibold transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">logout</span> Log Out
+          </button>
+</div>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant/60">
+        Note: Logging out terminates all encrypted session hashes and returns access credentials to standby mode.
+      </p>
+</section>
+</div>
+</div></main></div></body></html>

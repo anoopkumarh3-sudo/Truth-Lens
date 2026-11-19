@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary-fixed": "#efdbff", "surface-container": "#1f1f23", "surface-bright": "#38393c", "tertiary-container": "#91368a", "on-surface": "#e3e2e6", "tertiary-fixed": "#ffd7f4", "on-primary-container": "#e5c9ff", "inverse-surface": "#e3e2e6", "on-primary-fixed-variant": "#6221a0", "error": "#ffb4ab", "surface-variant": "#343538", "on-secondary": "#2000a4", "outline": "#978d9d", "on-error-container": "#ffdad6", "inverse-primary": "#7b3eba", "on-surface-variant": "#cec2d4", "background": "#121316", "on-primary-fixed": "#2b0052", "on-secondary-container": "#b0adff", "tertiary-fixed-dim": "#ffabf1", "primary-container": "#783bb7", "on-secondary-fixed": "#100069", "surface-container-low": "#1b1b1f", "secondary": "#c4c0ff", "secondary-container": "#3621cc", "on-primary": "#480082", "secondary-fixed-dim": "#c4c0ff", "on-error": "#690005", "on-tertiary-fixed": "#380037", "outline-variant": "#4c4452", "on-secondary-fixed-variant": "#3621cc", "inverse-on-surface": "#2f3034", "tertiary": "#ffabf1", "surface-container-high": "#292a2d", "on-tertiary-container": "#ffc0f2", "on-background": "#e3e2e6", "surface": "#121316", "surface-tint": "#dcb8ff", "primary": "#dcb8ff", "surface-container-lowest": "#0d0e11", "on-tertiary-fixed-variant": "#781f74", "secondary-fixed": "#e3dfff", "error-container": "#93000a", "surface-dim": "#121316", "primary-fixed-dim": "#dcb8ff", "on-tertiary": "#5c005a", "surface-container-highest": "#343538" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "margin-mobile": "1rem", "gutter-mobile": "1rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "space-md": "1rem", "space-lg": "1.5rem", "gutter": "1.5rem", "margin": "2.5rem" }, "fontFamily": { "headline-xl": [ "Manrope" ], "headline-sm": [ "Manrope" ], "headline-lg": [ "Manrope" ], "body-sm": [ "Inter" ], "headline-md": [ "Manrope" ], "headline-xl-mobile": [ "Manrope" ], "body-lg": [ "Inter" ], "body-md": [ "Inter" ], "label-md": [ "Inter" ], "display-lg-mobile": [ "Manrope" ], "label-sm": [ "Inter" ], "display-lg": [ "Manrope" ] }, "fontSize": { "headline-xl": [ "2.5rem", { "lineHeight": "3rem", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "headline-sm": [ "1.25rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.005em", "fontWeight": "600" } ], "headline-lg": [ "2rem", { "lineHeight": "2.5rem", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "body-sm": [ "0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.005em", "fontWeight": "400" } ], "headline-md": [ "1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-xl-mobile": [ "1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "body-lg": [ "1.125rem", { "lineHeight": "1.75rem", "letterSpacing": "0em", "fontWeight": "400" } ], "body-md": [ "1rem", { "lineHeight": "1.5rem", "letterSpacing": "0em", "fontWeight": "400" } ], "label-md": [ "0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "500" } ], "display-lg-mobile": [ "2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "label-sm": [ "0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.05em", "fontWeight": "600" } ], "display-lg": [ "3.5rem", { "lineHeight": "4.25rem", "letterSpacing": "-0.025em", "fontWeight": "700" } ] } } } };</script></head><body class="bg-surface-container-lowest font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-[248px] bg-surface-container-low z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="px-space-lg pt-space-lg pb-space-md"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center"><span class="material-symbols-outlined text-primary text-[20px]">verified_user</span></div><span class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">TruthLens</span></div><p class="font-label-sm text-label-sm text-outline mt-space-xs pl-0.5">Verify More. Trust Smarter.</p></div><div class="px-space-md space-y-space-md mt-space-sm"><div class="space-y-space-xs"><p class="px-space-sm font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">WORKSPACE</p><nav class="space-y-1" data-active-classes="bg-primary-container text-on-surface shadow-[0_0_16px_rgba(120,59,183,0.35)]"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="home" href="#"><span class="material-symbols-outlined text-[20px]">home</span><span>Home</span></a></nav></div><div class="space-y-space-xs"><p class="px-space-sm font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">AI TOOLS</p><nav class="space-y-1" data-active-classes="bg-primary-container text-on-surface shadow-[0_0_16px_rgba(120,59,183,0.35)]"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="omniscan" href="#"><span class="material-symbols-outlined text-[20px]">document_scanner</span><span>OmniScan</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="linklens" href="#"><span class="material-symbols-outlined text-[20px]">link</span><span>LinkLens</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="websentinel" href="#"><span class="material-symbols-outlined text-[20px]">shield</span><span>WebSentinel</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="qrguard" href="#"><span class="material-symbols-outlined text-[20px]">qr_code_scanner</span><span>QRGuard</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="reorigin" href="#"><span class="material-symbols-outlined text-[20px]">auto_fix_high</span><span>ReOrigin</span></a></nav></div><div class="space-y-space-xs"><p class="px-space-sm font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">MANAGEMENT</p><nav class="space-y-1" data-active-classes="bg-primary-container text-on-surface shadow-[0_0_16px_rgba(120,59,183,0.35)]"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>Dashboard</span></a></nav></div></div></div><div class="px-space-md pb-space-lg space-y-space-md"><div class="bg-surface-container p-space-sm rounded-DEFAULT"><div class="flex items-center justify-between"><span class="font-headline-sm text-headline-sm text-on-surface font-semibold">100 LC</span><button class="px-space-sm py-1 rounded-full font-label-sm text-label-sm text-on-surface bg-surface-container-high hover:bg-surface-bright transition-colors" type="button">Get Credits</button></div><p class="font-label-sm text-label-sm text-outline mt-space-xs">Illustrative active balance</p></div><div class="flex items-center justify-between pt-space-xs px-space-xs cursor-pointer hover:opacity-90 transition-opacity"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center"><span class="font-label-md text-label-md text-on-primary-container font-semibold">TL</span></div><span class="font-label-md text-label-md text-on-surface font-medium">My Account</span></div><span class="material-symbols-outlined text-outline text-[18px]">expand_more</span></div></div></aside><div class="pl-[248px]"><header class="fixed top-0 left-[248px] right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-outline text-[20px]">security</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Autonomous Threat Intelligence</span></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container px-space-md py-1.5 rounded-full"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface font-medium">100 LC Available · LensCredits Active</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="w-full pt-16 bg-surface-container-lowest min-h-screen px-space-lg py-space-xl"><div class="flex flex-col w-full relative">
+<!-- Interactive Script to Ensure Sidebar Link Continuity & Interactive Toggles -->
+<script>
+    (function syncSidebar() {
+      const navLinks = document.querySelectorAll('aside nav a');
+      navLinks.forEach(link => {
+        if (link.getAttribute('data-path') === 'reorigin') {
+          link.classList.remove('text-on-surface-variant', 'hover:bg-surface-container-high');
+          link.classList.add('bg-primary-container', 'text-on-surface', 'shadow-[0_0_18px_rgba(120,59,183,0.45)]');
+          const icon = link.querySelector('.material-symbols-outlined');
+          if (icon) icon.classList.add('text-primary');
+        } else {
+          link.classList.remove('bg-primary-container', 'shadow-[0_0_16px_rgba(120,59,183,0.35)]', 'shadow-[0_0_18px_rgba(120,59,183,0.45)]');
+          link.classList.add('text-on-surface-variant');
+        }
+      });
+    })();
+  </script>
+<!-- Ambient Violet / Indigo Aura Glows -->
+<div class="pointer-events-none absolute -top-12 -left-20 w-[580px] h-[340px] bg-primary-container/15 blur-[120px] rounded-full mix-blend-screen"></div>
+<div class="pointer-events-none absolute top-40 right-10 w-[420px] h-[320px] bg-secondary-container/10 blur-[140px] rounded-full mix-blend-screen"></div>
+<!-- SECTION 1: Page Header & Global Model Telemetry -->
+<header class="relative flex flex-col md:flex-row md:items-end justify-between gap-space-md pb-space-lg">
+<div class="space-y-space-xs max-w-3xl">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-primary-container/30 flex items-center justify-center text-primary shadow-[0_0_20px_rgba(120,59,183,0.35)]">
+<span class="material-symbols-outlined text-[22px]">auto_fix_high</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-semibold">ReOrigin</h1>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+          STABLE DIFFUSION INPAINTING v2.4
+        </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Explore possible image reconstructions using AI-powered visual restoration technology.
+      </p>
+</div>
+<!-- LensCredits Live Indicator -->
+<div class="flex items-center gap-space-sm bg-surface-container px-space-md py-2 rounded-full self-start md:self-auto shadow-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold tracking-wide">100 LC Available · LensCredits Active</span>
+</div>
+</header>
+<!-- SECTION 2: Staged Image & Inpainting Configuration Workspace -->
+<section class="mt-space-md bg-surface-container-low rounded-lg p-space-lg shadow-md space-y-space-md">
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-2">
+<div>
+<p class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-semibold">Explore Beyond The Visible</p>
+<p class="font-body-sm text-body-sm text-outline">Upload an image to explore a possible AI-assisted reconstruction of selected damaged or altered regions.</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container/20 text-secondary font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+          READY FOR INPAINTING
+        </span>
+</div>
+</div>
+<!-- Uploaded Media Card Module -->
+<div class="bg-surface-container rounded-DEFAULT p-space-md flex flex-col xl:flex-row items-stretch gap-space-md">
+<!-- Media Thumbnail Display -->
+<div class="relative w-full xl:w-48 h-32 rounded-DEFAULT overflow-hidden bg-surface-container-lowest flex-shrink-0 flex items-center justify-center">
+<img class="w-full h-full object-cover rounded-DEFAULT filter contrast-105" data-alt="Ancient Greek Hellenistic marble bas-relief frieze displaying high classical draped figures, Athena with spear, warrior holding hoplon shield, Apollo with lyre, damaged surface with chipped central sections and natural weathered limestone patina" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCq5bMGzF5Pz7r9YbG8LhVktFVPiaR6oxkBlAhHm_miRhtHLEID_77Uhwlwbc3vOGUvAmvmAaRQgcgorWE6AmfkCZximeuEF7Rd76XnOXDRk110kCErWvLZ3_kerP4ZI-K6UYTVXwkcTiVmnGpdPy4AHOSwzVhHyqFyzI2l1DNU2LknDnO0OUsxqEXEtTCaW5AM6XGtQXlJq8YrXi2elCzmrgb5KSswtY7eI3trIdRf"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+<span class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-surface-container-lowest/90 font-label-sm text-label-sm text-on-surface">1200 × 896</span>
+</div>
+<!-- Center File Attributes & Mask Target -->
+<div class="flex-1 flex flex-col justify-between space-y-space-sm min-w-0">
+<div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate font-medium">ancient_marble_frieze_damaged.png</h3>
+<span class="font-label-sm text-label-sm text-outline">3.8 MB · RGB 8-bit · Lossless PNG</span>
+</div>
+<!-- Selected Region Mask Bar -->
+<div class="mt-space-sm bg-surface-container-high rounded-DEFAULT p-space-sm flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">texture</span>
+<div class="space-y-0.5 min-w-0">
+<p class="font-label-md text-label-md text-on-surface font-semibold truncate">
+                Selected Inpainting Mask: Region Mask #A1
+              </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">
+                Central Frieze Abrasion &amp; Chipped Bas-Relief Section (18.4% surface area)
+              </p>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm pt-1">
+<button class="px-space-md py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-bright transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">swap_horiz</span> Replace File
+          </button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md hover:text-error hover:bg-error-container/20 transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">delete</span> Remove
+          </button>
+</div>
+</div>
+<!-- Right: Inpainting Region Target & Safety Protocol -->
+<div class="w-full xl:w-80 bg-surface-container-lowest rounded-DEFAULT p-space-sm flex flex-col justify-between space-y-space-sm">
+<div class="space-y-1">
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span class="uppercase tracking-wider">Mask Bounding Target</span>
+<span class="text-secondary font-mono">[410, 180, 730, 660]</span>
+</div>
+<!-- Mini Mask Grid Wireframe Graphic -->
+<div class="h-16 w-full rounded bg-surface-container-low relative overflow-hidden flex items-center justify-center">
+<div class="absolute inset-0 grid grid-cols-6 grid-rows-3 opacity-20">
+<div class="bg-outline/20"></div><div class="bg-outline/10"></div><div class="bg-outline/20"></div><div class="bg-outline/10"></div><div class="bg-outline/20"></div><div class="bg-outline/10"></div>
+<div class="bg-outline/10"></div><div class="bg-outline/20"></div><div class="bg-primary/40"></div><div class="bg-primary/50"></div><div class="bg-outline/20"></div><div class="bg-outline/10"></div>
+<div class="bg-outline/20"></div><div class="bg-outline/10"></div><div class="bg-primary/30"></div><div class="bg-primary/30"></div><div class="bg-outline/10"></div><div class="bg-outline/20"></div>
+</div>
+<span class="relative z-10 px-2 py-0.5 rounded bg-surface-container-lowest/80 text-primary font-label-sm text-label-sm">18.4% Active Locus</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-outline flex items-start gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px] mt-0.5 flex-shrink-0">lock</span>
+<span>Non-destructive masked synthesis mode: Unmasked regions remain 100% bitwise untouched.</span>
+</p>
+</div>
+</div>
+<!-- SECTION 3: Reconstruction Info Card ("What ReOrigin Does") -->
+<div class="bg-primary-container/10 rounded-DEFAULT p-space-md shadow-sm flex items-start gap-space-md">
+<div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center flex-shrink-0 text-on-primary">
+<span class="material-symbols-outlined text-[18px]">info</span>
+</div>
+<div class="space-y-1">
+<h4 class="font-label-md text-label-md text-primary font-semibold tracking-wide uppercase">What ReOrigin Does</h4>
+<p class="font-body-sm text-body-sm text-on-surface">
+          ReOrigin uses generative AI to produce a possible visual reconstruction. The generated result is an AI interpretation and may differ significantly from the actual original image.
+        </p>
+<p class="font-label-sm text-label-sm text-outline">
+          Hypothetical generative synthesis. Not intended for recovering verified legal or forensic originals.
+        </p>
+</div>
+</div>
+<!-- SECTION 4: Credit Requirement & CTA Execution Row -->
+<div class="space-y-space-sm pt-space-xs">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between text-outline font-label-sm text-label-sm px-1">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">toll</span>
+          Reconstruction cost: <strong class="text-on-surface">25 LC</strong>
+</span>
+<span>Available balance: <strong class="text-on-surface">100 LC</strong> → Post-reconstruction: <span class="text-secondary font-semibold">75 LC</span></span>
+</div>
+<!-- Primary Action CTA -->
+<button class="w-full py-3.5 px-space-xl rounded-full bg-on-surface text-surface-container-lowest font-headline-sm text-headline-sm font-semibold flex items-center justify-center gap-space-sm hover:opacity-90 shadow-[0_0_24px_rgba(255,255,255,0.25)] transition-all" type="button">
+<span class="material-symbols-outlined text-[22px]">auto_awesome</span>
+<span>Reconstruct Image →</span>
+</button>
+</div>
+</section>
+<!-- SECTION 5: Completed Reconstruction Workspace - SIDE-BY-SIDE COMPARISON -->
+<section class="mt-space-xl bg-surface-container-low rounded-lg p-space-lg shadow-xl space-y-space-lg">
+<!-- Comparison Header & Execution Metrics -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-sm pb-space-sm">
+<div class="space-y-1">
+<div class="flex items-center gap-space-sm">
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight">
+            Reconstruction Workspace // Session #RO-4819-SD
+          </h2>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container/20 text-secondary font-label-sm text-label-sm font-semibold tracking-wide">
+            INPAINTING COMPLETED
+          </span>
+</div>
+<p class="font-label-sm text-label-sm text-outline font-mono">
+          Execution Latency: 2.14s · Steps: 35 DDIM · Guidance Scale: 7.5 · Seed: 884192049
+        </p>
+</div>
+<!-- Quick Interactive View Mode Chips -->
+<div class="flex items-center gap-1 bg-surface-container p-1 rounded-full self-start lg:self-auto">
+<button class="px-3 py-1 rounded-full bg-surface-bright text-on-surface font-label-sm text-label-sm font-medium" type="button">Split View</button>
+<button class="px-3 py-1 rounded-full text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">Diff Heatmap</button>
+<button class="px-3 py-1 rounded-full text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">Luma Profile</button>
+</div>
+</div>
+<!-- Dual Comparison Canvas Panels -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg">
+<!-- Left Panel: Baseline Input -->
+<div class="flex flex-col bg-surface-container rounded-lg overflow-hidden shadow-md">
+<!-- Panel Subheader -->
+<div class="px-space-md py-space-sm bg-surface-container-high flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-medium">Uploaded Image</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-lowest text-outline font-label-sm text-label-sm uppercase font-semibold">
+            Input Baseline (Raw)
+          </span>
+</div>
+<!-- Image Container with Region Overlay -->
+<div class="relative w-full aspect-[4/3] bg-surface-container-lowest overflow-hidden group">
+<img class="w-full h-full object-cover" data-alt="Ancient Greek Hellenistic marble bas-relief frieze displaying high classical draped figures, Athena with spear, warrior holding hoplon shield, Apollo with lyre, damaged surface with chipped central sections and natural weathered limestone patina" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDrC8-6s87WxvUG28ulEReAyMZMiq9zAIkt2Q0sEr6GGBHxD06dFJPr_vtCIoBcjk_XL_991Vx6U0AAh5EI6PWbHawHr6xzkA_KCI3p2OPgEck1o28eq_cvRQ1EK3rX1BdFpPK7vO_tX2vsi9E8eg4irlbsLHD-_d5ChKp6HxlyUSjQw62AsFcxYF4L1q4SWebfopYdp9zmtGbFebsSMCBZz-TUEuO74NOkOY5fpfm"/>
+<!-- Masked Annotation Bounding Frame Indicator -->
+<div class="absolute top-[20%] left-[34%] w-[28%] h-[54%] border-2 border-dashed border-amber-400/80 rounded bg-amber-400/10 pointer-events-none flex flex-col justify-between p-1.5">
+<span class="self-start px-1.5 py-0.5 rounded bg-surface-container-lowest/90 text-amber-300 font-mono text-[10px] tracking-tight">
+              Mask [x:410, y:180, w:320, h:480]
+            </span>
+<span class="self-end px-1.5 py-0.5 rounded bg-amber-400/30 text-amber-200 font-label-sm text-label-sm uppercase">
+              Damaged Abrasion
+            </span>
+</div>
+<!-- Corner Zoom Control Icon -->
+<div class="absolute bottom-3 right-3 p-2 rounded-full bg-surface-container-lowest/80 text-on-surface hover:bg-surface-bright transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-[18px]">zoom_in</span>
+</div>
+</div>
+<!-- Panel Footer -->
+<div class="px-space-md py-space-sm bg-surface-container flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span>1200 × 896 px · Unaltered Original File</span>
+<span class="font-mono">CRC32: 9A814B3F</span>
+</div>
+</div>
+<!-- Right Panel: AI Reconstructed Output -->
+<div class="flex flex-col bg-surface-container rounded-lg overflow-hidden shadow-[0_0_32px_rgba(120,59,183,0.2)] ring-1 ring-primary-container/60">
+<!-- Panel Subheader -->
+<div class="px-space-md py-space-sm bg-primary-container/20 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span class="font-headline-sm text-headline-sm text-primary font-medium">AI-Reconstructed Image</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm uppercase font-semibold">
+            Synthetic Inpainting Output
+          </span>
+</div>
+<!-- Inpainting Visual Container with Synthesis Glow -->
+<div class="relative w-full aspect-[4/3] bg-surface-container-lowest overflow-hidden group">
+<img class="w-full h-full object-cover filter brightness-[1.03]" data-alt="Ancient Greek Hellenistic marble bas-relief frieze displaying high classical draped figures, Athena with spear, warrior holding hoplon shield, Apollo with lyre, damaged surface with chipped central sections and natural weathered limestone patina" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAatlFlCejrlLJX9WiMyXC9KCBjkOdSeJkw7HisES8-jne39krsJNbHrqShUJRoIc877b2OTr-3Rv3B_Nt52nXtaE1SiqEkzZi33AcfRjmQ2ACwZIkdD7bHB61lRm2W7ViwkqptdPSpNBfCBO_q__UuLjA3TlcRL-Ej0Y15xBQ4JdwAzugABlQy1vZaNdCT4ifh8v98tkeZoiEikhLXbnOhIbmozXML0KPRUQeEP7xP"/>
+<!-- Reconstructed Region Highlight Box with Violet Diffusion Aura -->
+<div class="absolute top-[20%] left-[34%] w-[28%] h-[54%] rounded bg-primary-container/20 ring-1 ring-primary/60 shadow-[0_0_30px_rgba(120,59,183,0.4)] pointer-events-none flex flex-col justify-between p-1.5 backdrop-contrast-125">
+<span class="self-start px-1.5 py-0.5 rounded bg-primary-container text-on-primary-container font-mono text-[10px]">
+              AI Generative Synthesis
+            </span>
+<div class="flex items-center gap-1 self-end px-1.5 py-0.5 rounded bg-surface-container-lowest/80 text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span>
+<span>Inpainted 98.4% SNR</span>
+</div>
+</div>
+<!-- Top-Right Caution Watermark Pill -->
+<div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 text-primary-fixed font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1.5 backdrop-blur-md">
+<span class="material-symbols-outlined text-[14px] text-tertiary">warning</span>
+<span>Generative Hypothesis</span>
+</div>
+<!-- Quick Comparison Hover Slider Indicator Mock -->
+<div class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-surface-container-lowest/80 text-outline font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">compare</span>
+<span>Hover to Inspect Alpha Diff</span>
+</div>
+</div>
+<!-- Panel Footer -->
+<div class="px-space-md py-space-sm bg-surface-container flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface">1200 × 896 px · Stable Diffusion 2.0 Inpainting</span>
+<span class="text-primary font-mono font-medium">NOT Legal / Forensic Original</span>
+</div>
+</div>
+</div>
+<!-- SECTION 6: Reconstruction Telemetry Summary Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md pt-space-xs">
+<!-- Metric 1 -->
+<div class="bg-surface-container rounded-DEFAULT p-space-md space-y-1">
+<p class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Reconstruction Status</p>
+<p class="font-headline-sm text-headline-sm text-on-surface font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+          Completed (Success)
+        </p>
+<p class="font-body-sm text-body-sm text-outline">Mask bitmask converged 100%</p>
+</div>
+<!-- Metric 2 -->
+<div class="bg-surface-container rounded-DEFAULT p-space-md space-y-1">
+<p class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Input / Output Res</p>
+<p class="font-headline-sm text-headline-sm text-on-surface font-semibold font-mono">
+          1200 × 896
+        </p>
+<p class="font-body-sm text-body-sm text-outline">1:1 Exact aspect ratio match</p>
+</div>
+<!-- Metric 3 -->
+<div class="bg-surface-container rounded-DEFAULT p-space-md space-y-1">
+<p class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Processing Engine</p>
+<p class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate">
+          SD Inpainting v2.4
+        </p>
+<p class="font-body-sm text-body-sm text-outline truncate">512-ema / Latent Blur 4px</p>
+</div>
+<!-- Metric 4 -->
+<div class="bg-surface-container rounded-DEFAULT p-space-md space-y-1">
+<p class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Execution Timestamp</p>
+<p class="font-headline-sm text-headline-sm text-on-surface font-semibold font-mono">
+          15:42:08 UTC
+        </p>
+<p class="font-body-sm text-body-sm text-outline font-mono">Execution Latency: 2.14s</p>
+</div>
+</div>
+<!-- SECTION 7: AI Reconstruction Synthesis Reasoning -->
+<div class="bg-surface-container rounded-DEFAULT p-space-md space-y-space-xs">
+<div class="flex items-center gap-2 text-primary font-label-md text-label-md font-semibold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[18px]">psychology</span>
+<span>Synthesis Reasoning &amp; Structural Inference</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        The generative inpainting pipeline synthesized plausible stone carving textures and drapery contours consistent with the surrounding Hellenistic relief marble grain. The algorithm sampled contiguous high-frequency surface noise to infer missing structural geometry. All synthesized details represent a probabilistic machine learning estimate and must not be interpreted as physical archaeological or forensic truth.
+      </p>
+</div>
+<!-- SECTION 8: Important Forensic Disclaimer Banner -->
+<div class="bg-error-container/20 rounded-DEFAULT p-space-md flex items-start gap-space-md shadow-sm">
+<div class="w-8 h-8 rounded-full bg-error-container flex items-center justify-center flex-shrink-0 text-error">
+<span class="material-symbols-outlined text-[20px]">gavel</span>
+</div>
+<div class="space-y-1">
+<h4 class="font-label-md text-label-md text-error font-semibold uppercase tracking-wider">
+          Forensic Integrity Notice
+        </h4>
+<p class="font-body-sm text-body-sm text-on-surface">
+          This image is an AI-generated reconstruction, not a verified original. Generated details may be inaccurate, incomplete or entirely synthetic. Do not use this result as definitive forensic evidence.
+        </p>
+</div>
+</div>
+</section>
+<!-- SECTION 9: Bottom Persistent Dock: Download & Report Actions -->
+<footer class="mt-space-lg mb-space-md bg-surface-container rounded-lg p-space-md shadow-xl flex flex-col md:flex-row items-center justify-between gap-space-md">
+<!-- Cryptographic ID Indicator -->
+<div class="flex items-center gap-space-sm text-outline font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">verified</span>
+<span class="font-mono text-on-surface">Artifact ID: RO-4819-SYNTHETIC.PNG</span>
+<span class="hidden sm:inline">· Signed SHA-256</span>
+</div>
+<!-- Action Buttons Cluster -->
+<div class="flex flex-wrap items-center justify-end gap-space-sm w-full md:w-auto">
+<!-- Tertiary Reset Action -->
+<button class="px-space-md py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface hover:bg-surface-bright font-label-md text-label-md transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+<span>New Reconstruction</span>
+</button>
+<!-- Secondary Report Actions -->
+<button class="px-space-md py-2 rounded-full bg-surface-container-high text-on-surface hover:bg-surface-bright font-label-md text-label-md transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>View Report (Free)</span>
+</button>
+<button class="px-space-md py-2 rounded-full bg-surface-container-high text-on-surface hover:bg-surface-bright font-label-md text-label-md transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">description</span>
+<span>Download Report (Free)</span>
+</button>
+<!-- Primary White Pill Action Button -->
+<button class="px-space-lg py-2 rounded-full bg-on-surface text-surface-container-lowest font-label-md text-label-md font-semibold hover:opacity-90 shadow-[0_0_16px_rgba(255,255,255,0.2)] transition-all flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Download Image</span>
+</button>
+</div>
+</footer>
+</div></main></div></body></html>
